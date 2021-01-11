@@ -5,6 +5,7 @@ function createPassword(len){
     let map = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()_-+={[}]|:;"\'<,>.?/'.split("");
     let pass = "";
     for(var i = 1; i <= len; i++){
+        /** Arithmetic operation */
         pass += map[Math.floor(Math.random() * Math.floor(93 - i) + i)];
     }
 
