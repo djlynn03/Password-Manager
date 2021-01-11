@@ -1,0 +1,21 @@
+{
+  "name": "Password Manager",
+  "version": "1.0",
+  "description": "CAPS Password Manager",
+  "permissions": ["storage", "declarativeContent", "activeTab", "tabs"],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "16x16.png"
+  },
+  "manifest_version": 2
+}
