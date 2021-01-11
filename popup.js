@@ -1,6 +1,13 @@
+/** Functions used */
 import {createPassword, sleep, strengthIndicator} from "./functions.js";
 
+/** Three data types used are boolean, string, and int */
+
+
+/** Array data type */
 let createButton = document.getElementsByClassName("createButton")[0];
+
+
 let generateButton = document.getElementsByClassName("generateButton")[0];
 let buttonContainer = document.getElementById('main');
 
@@ -34,6 +41,7 @@ window.addEventListener('load', function () {
 
             chrome.storage.sync.get(tabLink, function (result) {
                 var inputFound = true;
+                /** Conditionals */
                 if (inputFound) {
                     if (typeof result[tabLink] === 'undefined') {
                         buttonContainer.classList.add('shown');
@@ -95,6 +103,8 @@ editPassword.onclick = function (element) {
     buttonContainer.classList.add('shown');
     buttonContainer.classList.remove('hidden');
 }
+
+
 
 
 /** Generate submit button click- places generated password in storage and onto web page */
@@ -161,6 +171,8 @@ fillPassword.onclick = function (element) {
     });
 }
 
+/** User input is taken on popup, output displayed is the password in the system and on the web page */
+
 /** Adds created password to storage and places on web page */
 createSubmit.onclick = function (element) {
     createSubmit.innerText = "Success!";
@@ -194,6 +206,7 @@ createSubmit.onclick = function (element) {
 /** Changes password strength indicator colors */
 textBox.onkeyup = function () {
     let createdPassword = textBox.value;
+    /** Loop */
     for (let i = 0; i <= 4; i++) {
         if (strengthIndicator(createdPassword)[i] === 1) {
             strengthBoxes[i].style.backgroundColor = "rgba(0,255,0,0.5)";
