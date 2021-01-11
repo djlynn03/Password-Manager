@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif, bold;
+}
+
+.title{
+    height: 25px;
+    width: 100%;
+    /*float: left;*/
+    float: top ;
+    position: relative;
+    background: rgb(165, 199, 196);
+    font-size: 20px;
+    line-height: 25px;
+    border-bottom: solid 2px black;
+    font-stretch: ultra-condensed;
+}
+
+#noPassword{
+    width: 350px;
+    height: 75px;
+    opacity: 1;
+    background: rgba(164, 224, 219, 1);
+    position: absolute;
+    bottom: 0;
+}
+
+.options_button_container{
+    height: 23px;
+    width: 66px;
+    background-color: inherit;
+    float: right;
+    position: relative;
+
+}
+.options_button_container:hover{
+    background: rgb(120, 155, 152);
+    cursor: pointer;
+    cursor: hand;
+}
+.options_button_logo{
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    /*margin: 6px;*/
+    float: right;
+    background-image: url("3dotoptions.png");
+    /*background-color: green;*/
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.passwordExistsContainer{
+    /*position: fixed;*/
+    width: 350px;
+    height: 75px;
+    opacity: 1;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    background: rgba(164, 224, 219, 1);
+}
+.fillPassword{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 75px;
+    border-right: 2px solid black;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+
+}
+.editPassword{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    float: right;
+    /*padding-top: 40px;*/
+    /*padding-bottom: 42px;*/
+    font-size: 18px;
+    line-height: 75px;
+    border-left: 2px solid black;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+}
+
+
+.buttonContainer {
+    width: 350px;
+    height: 75px;
+    background: rgba(164, 224, 219, 1);
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+.createButton {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 75px;
+    border-right: 2px solid black;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+
+
+}
+
+.generateButton {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    float: right;
+    /*padding-top: 40px;*/
+    /*padding-bottom: 42px;*/
+    font-size: 18px;
+    line-height: 75px;
+    border-left: 2px solid black;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+
+}
+
+.createContainer {
+    width: 350px;
+    height: 75px;
+    /*background: rgba(164, 224, 219, 1);*/
+    position: absolute;
+    bottom: 0;
+}
+
+.textBox {
+    height: 70%;
+    width: 264px;
+    background: black;
+    float: left;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+
+}
+
+.generateSubmit{
+    width: 100%;
+    border-right: none;
+    height: 30%;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+}
+
+
+.generatePasswordBox input{
+    width: 100%;
+    height: 100%;
+    background: rgb(210, 249, 237);
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    opacity: inherit;
+    z-index: inherit;
+}
+
+.generatePasswordBox{
+    height: 70%;
+    width: 100%;
+    background: black;
+    float: left;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+}
+
+.textBox input {
+    width: 100%;
+    height: 100%;
+    background: rgb(210, 249, 237);
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-right: solid 1px black;
+    opacity: inherit;
+    z-index: inherit;
+}
+
+.strengthIndicator {
+    width: 25%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+    text-align: left;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: inherit;
+    z-index: inherit;
+}
+
+.strengthIndicator * {
+    padding-left: 1px;
+    opacity: inherit;
+    z-index: inherit;
+}
+
+ul {
+    line-height: 100%;
+    list-style-type: none;
+    /*padding-left: 5px;*/
+    font-size: 15px;
+}
+
+
+.generateContainer{
+    width: 350px;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+}
+
+#lowercase {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#uppercase {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#number {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#symbol {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#length {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.submitButton {
+    /*width: 75%;*/
+    width: 264px;
+    height: 30%;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    opacity: inherit;
+    z-index: inherit;
+    background: rgba(164, 224, 219, 1);
+    border-right: 1px solid black;
+}
+
+.submitButton:hover {
+    background: #95ccc8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.generateSubmit:hover{
+    background: #95ccc8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.generateButton:hover {
+    background: #95ccc8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.fillPassword:hover {
+    background: #95ccc8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.editPassword:hover {
+    background: #95ccc8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.createButton:hover {
+    background: #95CCC8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -99999;
+}
+
+.shown {
+    opacity: 1;
+    z-index: 99999;
+}
+
+

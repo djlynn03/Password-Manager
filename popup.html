@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"/>
+    <link href="./main.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<!--Title section at top of window-->
+<div class="title">Password Protect
+    <div class="options_button_container">
+        <div class="options_button_logo"></div>
+    </div>
+</div>
+<div class="noPassword hidden" id="noPassword" style="background: rgb(165, 199, 196)">
+    Error: No Password Found
+</div>
+
+<!--Container for Create and Generate Password buttons-->
+<div class="buttonContainer hidden" id="main">
+    <div class="createButton" id="btn1">Create Password</div>
+    <div class="generateButton">Generate Password</div>
+</div>
+
+<!--Container for creating password-->
+<div class="createContainer hidden" id="createContainer">
+    <div class="textBox">
+        <label>
+            <input id="passwordInput" type="text">
+        </label>
+    </div>
+    <div class="submitButton">Save and Submit</div>
+    <!--Strength indicator sidebar-->
+    <div class="strengthIndicator">
+        <ul>
+            <div class="strengthBoxes" id="lowercase">
+                <li>lowercase</li>
+            </div>
+            <div class="strengthBoxes" id="uppercase">
+                <li>uppercase</li>
+            </div>
+            <div class="strengthBoxes" id="number">
+                <li>number</li>
+            </div>
+            <div class="strengthBoxes" id="symbol">
+                <li>symbol</li>
+            </div>
+            <div class="strengthBoxes" id="length">
+                <li>length > 10</li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!--Container for using generated password-->
+<div class="generateContainer hidden" id="generateContainer">
+    <div class="generatePasswordBox">
+        <label>
+            <input id="generatedPasswordText" type="text">
+        </label>
+    </div>
+    <div class="generateSubmit">Save and Submit</div>
+</div>
+
+<!--Container for when password for website exists-->
+<div class="passwordExistsContainer hidden" id="passwordExistsContainer">
+    <div class="fillPassword">Auto-Fill Password</div>
+    <div class="editPassword">Edit Password</div>
+</div>
+
+
+<script src="popup.js" type="module"></script>
+</body>
+</html>

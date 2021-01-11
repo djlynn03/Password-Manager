@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif, bold;
+}
+
+#settingsContainer{
+    background: rgb(210, 249, 237);
+    width: 50%;
+    height: fit-content;
+    align-self: center;
+    border-radius: 10px;
+    padding: 30px 50px;
+    margin: 50px auto 0;
+}
+
+h1{
+    font-size: 30px;
+    /*padding-left: 30px;*/
+
+}
+
+#clearStorage{
+    background: rgba(164, 224, 219, 1);
+    padding: 3px 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#clearStorage:hover{
+    background: #95CCC8;
+    cursor: pointer;
+    cursor: hand;
+}
